@@ -1,0 +1,4 @@
+C:\Users\e4bar\Desktop\OneDrive\KlirStuff\_RH\Tech Challenge\KlirTechChallenge\angular\obj\Debug\netcoreapp3.1\Klir.TechChallenge.Web.Front.csprojAssemblyReference.cache
+C:\Users\e4bar\Desktop\OneDrive\KlirStuff\_RH\Tech Challenge\KlirTechChallenge\angular\obj\Debug\netcoreapp3.1\Klir.TechChallenge.Web.Front.AssemblyInfoInputs.cache
+C:\Users\e4bar\Desktop\OneDrive\KlirStuff\_RH\Tech Challenge\KlirTechChallenge\angular\obj\Debug\netcoreapp3.1\Klir.TechChallenge.Web.Front.AssemblyInfo.cs
+C:\Users\e4bar\Desktop\OneDrive\KlirStuff\_RH\Tech Challenge\KlirTechChallenge\angular\obj\Debug\netcoreapp3.1\Klir.TechChallenge.Web.Front.csproj.CoreCompileInputs.cache

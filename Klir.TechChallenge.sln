@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "backend", "backend", "{F332D047-B9A7-4B85-8359-9328589BED29}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{999D48DF-22BC-40B8-A8C4-A9B5760B77AC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "frontend", "frontend", "{C51C41D1-42C6-4690-9847-B372BAD06101}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Klir.TechChallenge.Web.Front", "angular\Klir.TechChallenge.Web.Front.csproj", "{7C53E485-14DD-4017-A992-193A405530AB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Klir.TechChallenge.Web.Api", "aspnet-core\Klir.TechChallenge.Web.Api\Klir.TechChallenge.Web.Api.csproj", "{82716132-B9B0-4629-9D72-6D5E42F3EEDD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Klir.TechChallenge.Tests", "aspnet-core\Klir.TechChallenge.Tests\Klir.TechChallenge.Tests.csproj", "{2698738B-6626-4968-814F-6B22068ACAEF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C53E485-14DD-4017-A992-193A405530AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C53E485-14DD-4017-A992-193A405530AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C53E485-14DD-4017-A992-193A405530AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82716132-B9B0-4629-9D72-6D5E42F3EEDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82716132-B9B0-4629-9D72-6D5E42F3EEDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82716132-B9B0-4629-9D72-6D5E42F3EEDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82716132-B9B0-4629-9D72-6D5E42F3EEDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2698738B-6626-4968-814F-6B22068ACAEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2698738B-6626-4968-814F-6B22068ACAEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2698738B-6626-4968-814F-6B22068ACAEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2698738B-6626-4968-814F-6B22068ACAEF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7C53E485-14DD-4017-A992-193A405530AB} = {C51C41D1-42C6-4690-9847-B372BAD06101}
+		{82716132-B9B0-4629-9D72-6D5E42F3EEDD} = {F332D047-B9A7-4B85-8359-9328589BED29}
+		{2698738B-6626-4968-814F-6B22068ACAEF} = {999D48DF-22BC-40B8-A8C4-A9B5760B77AC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B22C9792-C11E-4F83-91D8-5ACFDDC0FC5E}
+	EndGlobalSection
+EndGlobal
