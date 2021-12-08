@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8hjBzmNVTJRs3FqAy2RBVfBXCTOoozqfNIn06JMz2T5q2GARD/iz8A+QH5NwS1yzXJ4ip1i6a2r1boEmekurXQ==",
+  "dgSpecHash": "ul4Cis3wPe2lPOesSAPkRrT50oLg3HmXiEF8RzZ3TOmmmKArnHzkG55F9uLHp2r2eydl1C0ZkY6fafV+shPUZQ==",
   "success": true,
-  "projectFilePath": "/Users/u004772/Documents/projects/KlirTechChallenge/angular/Klir.TechChallenge.Web.Front.csproj",
+  "projectFilePath": "/Users/u004772/Documents/projects/testProject/shopping-car/angular/Klir.TechChallenge.Web.Front.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

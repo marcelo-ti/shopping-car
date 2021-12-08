@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/u004772/Documents/projects/KlirTechChallenge/aspnet-core/Klir.TechChallenge.Web.Api/Klir.TechChallenge.Web.Api.csproj": {}
+    "/Users/u004772/Documents/projects/testProject/shopping-car/aspnet-core/Klir.TechChallenge.Web.Api/Klir.TechChallenge.Web.Api.csproj": {}
   },
   "projects": {
-    "/Users/u004772/Documents/projects/KlirTechChallenge/aspnet-core/Klir.TechChallenge.Web.Api/Klir.TechChallenge.Web.Api.csproj": {
+    "/Users/u004772/Documents/projects/testProject/shopping-car/aspnet-core/Klir.TechChallenge.Web.Api/Klir.TechChallenge.Web.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/u004772/Documents/projects/KlirTechChallenge/aspnet-core/Klir.TechChallenge.Web.Api/Klir.TechChallenge.Web.Api.csproj",
+        "projectUniqueName": "/Users/u004772/Documents/projects/testProject/shopping-car/aspnet-core/Klir.TechChallenge.Web.Api/Klir.TechChallenge.Web.Api.csproj",
         "projectName": "Klir.TechChallenge.Web.Api",
-        "projectPath": "/Users/u004772/Documents/projects/KlirTechChallenge/aspnet-core/Klir.TechChallenge.Web.Api/Klir.TechChallenge.Web.Api.csproj",
+        "projectPath": "/Users/u004772/Documents/projects/testProject/shopping-car/aspnet-core/Klir.TechChallenge.Web.Api/Klir.TechChallenge.Web.Api.csproj",
         "packagesPath": "/Users/u004772/.nuget/packages/",
-        "outputPath": "/Users/u004772/Documents/projects/KlirTechChallenge/aspnet-core/Klir.TechChallenge.Web.Api/obj/",
+        "outputPath": "/Users/u004772/Documents/projects/testProject/shopping-car/aspnet-core/Klir.TechChallenge.Web.Api/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

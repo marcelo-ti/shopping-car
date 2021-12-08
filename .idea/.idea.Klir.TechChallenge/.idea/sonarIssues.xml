@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="/Immediate Window">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/Adapter/In/Controllers/ProductController.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/Adapter/In/Controllers/WeatherForecastController.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/Adapter/Out/Persistence/ProductQueryAdapter.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/Adapter/Out/Persistence/ProductRepository.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/Adapter/Out/Persistence/ProspectQueryAdapter.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/Application/Domain/Enums/Promotion.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/Application/Domain/Product.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/Application/Domain/ProductView.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/Application/Domain/Promotion.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/Application/Domain/WeatherForecast.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/Application/Ports/In/Queries/IGetProduct.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/Application/Ports/In/Queries/IGetProductQuery.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/Application/Ports/In/Queries/IGetProducts.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/Application/Ports/Out/ILoadProduct.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/Application/Services/GetProductService.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/Application/Services/GetProductsService.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/Controllers/ProductController.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/Controllers/WeatherForecastController.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/Exntesions/EnumExtensions.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/Extensions/EnumExtensions.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/Models/Product.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/Models/ProductView.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/Models/Promotion.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/Models/WeatherForecast.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/Startup.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

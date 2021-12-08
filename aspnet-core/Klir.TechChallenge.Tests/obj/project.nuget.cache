@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zkOW/MX3n0V6ocD0eGwPbAoJ7GMN3fO0QOobe6ey6DqYMBlLUFzTjIabfL/kKtN7n45Wpfmih6QZtoPSuOH9Ww==",
+  "dgSpecHash": "SAq8ZPclxMrdBxebM2DsKYh3bpYiC31QCuLADVfuxwmLXrv/254iDeEWWLKnLKM/bcaWh9ygaYQ1aKb0UdrE9g==",
   "success": true,
-  "projectFilePath": "/Users/u004772/Documents/projects/KlirTechChallenge/aspnet-core/Klir.TechChallenge.Tests/Klir.TechChallenge.Tests.csproj",
+  "projectFilePath": "/Users/u004772/Documents/projects/testProject/shopping-car/aspnet-core/Klir.TechChallenge.Tests/Klir.TechChallenge.Tests.csproj",
   "expectedPackageFiles": [
     "/Users/u004772/.nuget/packages/coverlet.collector/1.2.0/coverlet.collector.1.2.0.nupkg.sha512",
     "/Users/u004772/.nuget/packages/microsoft.codecoverage/16.5.0/microsoft.codecoverage.16.5.0.nupkg.sha512",

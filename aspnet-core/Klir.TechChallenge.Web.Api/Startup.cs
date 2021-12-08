@@ -1,16 +1,14 @@
+using Klir.TechChallenge.Web.Api.Adapter.Out.Persistence;
+using Klir.TechChallenge.Web.Api.Application.Ports.In.Queries;
+using Klir.TechChallenge.Web.Api.Application.Ports.Out;
+using Klir.TechChallenge.Web.Api.Application.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace KlirTechChallenge.Web.Api
+namespace Klir.TechChallenge.Web.Api
 {
     public class Startup
     {
@@ -26,13 +24,14 @@ namespace KlirTechChallenge.Web.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSingleton<ProductRepository>();
+            services.AddScoped<IGetProductQuery, GetProductService>();
+            services.AddScoped<ILoadProduct, ProductQueryAdapter>();
+
             services.AddCors(options =>
             {
                 options.AddPolicy(name: AllowSpecificOrigins,
-                                  builder =>
-                                  {
-                                      builder.WithOrigins("http://localhost:4200");
-                                  });
+                    builder => { builder.WithOrigins("http://localhost:4200"); });
             });
 
             services.AddControllers();
@@ -52,10 +51,7 @@ namespace KlirTechChallenge.Web.Api
 
             app.UseAuthorization();
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
+            app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
         }
     }
 }

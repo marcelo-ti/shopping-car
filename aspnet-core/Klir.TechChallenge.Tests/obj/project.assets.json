@@ -3482,11 +3482,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/u004772/Documents/projects/KlirTechChallenge/aspnet-core/Klir.TechChallenge.Tests/Klir.TechChallenge.Tests.csproj",
+      "projectUniqueName": "/Users/u004772/Documents/projects/testProject/shopping-car/aspnet-core/Klir.TechChallenge.Tests/Klir.TechChallenge.Tests.csproj",
       "projectName": "Klir.TechChallenge.Tests",
-      "projectPath": "/Users/u004772/Documents/projects/KlirTechChallenge/aspnet-core/Klir.TechChallenge.Tests/Klir.TechChallenge.Tests.csproj",
+      "projectPath": "/Users/u004772/Documents/projects/testProject/shopping-car/aspnet-core/Klir.TechChallenge.Tests/Klir.TechChallenge.Tests.csproj",
       "packagesPath": "/Users/u004772/.nuget/packages/",
-      "outputPath": "/Users/u004772/Documents/projects/KlirTechChallenge/aspnet-core/Klir.TechChallenge.Tests/obj/",
+      "outputPath": "/Users/u004772/Documents/projects/testProject/shopping-car/aspnet-core/Klir.TechChallenge.Tests/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

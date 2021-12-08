@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pKfP/N6X5Td9DfhENJZm5wKBfkrMm+PaEEbOhkbG6tehTpbAcrza8XBz1+sAblwh8RT+yIaLKZHMxeJrtP3hOg==",
+  "dgSpecHash": "ABTdDKoqLRRQ1z+ePjg7NLupiVE4buCV2giS8aoEli7DRtj4pe69oHFhwWDnATjj6dKU3MIeU1RFdGTfttDwxA==",
   "success": true,
-  "projectFilePath": "/Users/u004772/Documents/projects/KlirTechChallenge/aspnet-core/Klir.TechChallenge.Web.Api/Klir.TechChallenge.Web.Api.csproj",
+  "projectFilePath": "/Users/u004772/Documents/projects/testProject/shopping-car/aspnet-core/Klir.TechChallenge.Web.Api/Klir.TechChallenge.Web.Api.csproj",
   "expectedPackageFiles": [
     "/Users/u004772/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/u004772/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/u004772/Documents/projects/KlirTechChallenge/angular/Klir.TechChallenge.Web.Front.csproj": {}
+    "/Users/u004772/Documents/projects/testProject/shopping-car/angular/Klir.TechChallenge.Web.Front.csproj": {}
   },
   "projects": {
-    "/Users/u004772/Documents/projects/KlirTechChallenge/angular/Klir.TechChallenge.Web.Front.csproj": {
+    "/Users/u004772/Documents/projects/testProject/shopping-car/angular/Klir.TechChallenge.Web.Front.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/u004772/Documents/projects/KlirTechChallenge/angular/Klir.TechChallenge.Web.Front.csproj",
+        "projectUniqueName": "/Users/u004772/Documents/projects/testProject/shopping-car/angular/Klir.TechChallenge.Web.Front.csproj",
         "projectName": "Klir.TechChallenge.Web.Front",
-        "projectPath": "/Users/u004772/Documents/projects/KlirTechChallenge/angular/Klir.TechChallenge.Web.Front.csproj",
+        "projectPath": "/Users/u004772/Documents/projects/testProject/shopping-car/angular/Klir.TechChallenge.Web.Front.csproj",
         "packagesPath": "/Users/u004772/.nuget/packages/",
-        "outputPath": "/Users/u004772/Documents/projects/KlirTechChallenge/angular/obj/",
+        "outputPath": "/Users/u004772/Documents/projects/testProject/shopping-car/angular/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
