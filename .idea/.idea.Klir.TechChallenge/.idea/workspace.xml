@@ -5,56 +5,198 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="068dc0ad-dc4e-407a-96dc-fa57b432960b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/Adapter/In/Controllers/ProductController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/Adapter/Out/Persistence/ProductQueryAdapter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/Adapter/Out/Persistence/ProductRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/Application/Domain/Enums/Promotion.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/Application/Domain/Product.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/Application/Domain/ProductView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/Application/Ports/In/Queries/IGetProductQuery.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/Application/Ports/Out/ILoadProduct.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/Application/Services/GetProductService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/Extensions/EnumExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/Klir.TechChallenge/DesignTimeBuild/.dtbcache.v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/Klir.TechChallenge/v16/.suo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/KlirTechChallenge/DesignTimeBuild/.dtbcache.v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/KlirTechChallenge/config/applicationhost.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/KlirTechChallenge/v16/.suo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Web.Front.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/angular/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Web.Front.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Web.Front.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/angular/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Web.Front.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/angular/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Web.Front.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/angular/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Web.Front.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular/obj/Klir.TechChallenge.Web.Front.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular/obj/Klir.TechChallenge.Web.Front.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/angular/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/angular/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/angular/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Tests.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Tests.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/Klir.TechChallenge.Tests.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/Klir.TechChallenge.Tests.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/Klir.TechChallenge.Tests.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/Klir.TechChallenge.Tests.runtimeconfig.dev.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/Klir.TechChallenge.Tests.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/Microsoft.TestPlatform.CommunicationUtilities.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/Microsoft.TestPlatform.CoreUtilities.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/Microsoft.TestPlatform.CrossPlatEngine.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/Microsoft.TestPlatform.PlatformAbstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/Microsoft.TestPlatform.Utilities.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.CodeCoverage.Shim.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.TestPlatform.Common.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/NuGet.Frameworks.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/cs/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/cs/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/cs/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/cs/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/cs/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/de/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/de/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/de/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/de/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/de/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/es/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/es/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/es/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/es/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/es/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/fr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/fr/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/fr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/fr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/fr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/it/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/it/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/it/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/it/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/it/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/ja/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/ja/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/ja/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/ja/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/ja/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/ko/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/ko/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/ko/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/ko/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/ko/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/pl/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/pl/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/pl/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/pl/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/pl/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/ru/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/ru/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/ru/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/ru/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/ru/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/testhost.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/tr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/tr/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/tr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/tr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/tr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/xunit.abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/xunit.assert.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/xunit.core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/xunit.execution.dotnet.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/xunit.runner.reporters.netcoreapp10.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/xunit.runner.utility.netcoreapp10.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/xunit.runner.visualstudio.dotnetcore.testadapter.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Tests.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Tests.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Tests.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Tests.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Tests.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Tests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Tests.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/obj/Klir.TechChallenge.Tests.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/obj/Klir.TechChallenge.Tests.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Tests.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Tests.csproj.CopyComplete" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Tests.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Tests.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Tests.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Tests.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Tests.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Tests.genruntimeconfig.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Tests.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/obj/Debug/netcoreapp3.1/KlirTechChallenge.Tests.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/obj/Debug/netcoreapp3.1/KlirTechChallenge.Tests.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/obj/Debug/netcoreapp3.1/KlirTechChallenge.Tests.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/obj/Debug/netcoreapp3.1/KlirTechChallenge.Tests.csprojAssemblyReference.cache" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Tests/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/Controllers/WeatherForecastController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/Adapter/In/Controllers/WeatherForecastController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/Klir.TechChallenge.Web.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/Klir.TechChallenge.Web.Api.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/WeatherForecast.cs" beforeDir="false" afterPath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/Application/Domain/WeatherForecast.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/Klir.TechChallenge.Web.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/Klir.TechChallenge.Web.Api.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/Klir.TechChallenge.Web.Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/Klir.TechChallenge.Web.Api.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Web.Api.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Web.Api.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/Humanizer.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/Klir.TechChallenge.Web.Api.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/Klir.TechChallenge.Web.Api.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/Klir.TechChallenge.Web.Api.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/Klir.TechChallenge.Web.Api.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/Klir.TechChallenge.Web.Api.runtimeconfig.dev.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/Klir.TechChallenge.Web.Api.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/KlirTechChallenge.Web.Api.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/KlirTechChallenge.Web.Api.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/KlirTechChallenge.Web.Api.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/KlirTechChallenge.Web.Api.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/KlirTechChallenge.Web.Api.runtimeconfig.dev.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/KlirTechChallenge.Web.Api.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/Microsoft.Data.Sqlite.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/Microsoft.DotNet.PlatformAbstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Design.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Sqlite.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyModel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/SQLitePCLRaw.batteries_v2.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/SQLitePCLRaw.core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/SQLitePCLRaw.nativelibrary.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/SQLitePCLRaw.provider.dynamic_cdecl.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/System.Collections.Immutable.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/System.ComponentModel.Annotations.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/System.Diagnostics.DiagnosticSource.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/System.Text.Encodings.Web.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/System.Text.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/appsettings.Development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/appsettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/runtimes/alpine-x64/native/libe_sqlite3.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/runtimes/linux-arm/native/libe_sqlite3.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/runtimes/linux-arm64/native/libe_sqlite3.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/runtimes/linux-armel/native/libe_sqlite3.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/runtimes/linux-mips64/native/libe_sqlite3.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/runtimes/linux-musl-x64/native/libe_sqlite3.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/runtimes/linux-x64/native/libe_sqlite3.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/runtimes/linux-x86/native/libe_sqlite3.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/runtimes/osx-x64/native/libe_sqlite3.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/runtimes/win-arm/native/e_sqlite3.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/e_sqlite3.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/e_sqlite3.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/e_sqlite3.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Web.Api.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Web.Api.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Web.Api.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Web.Api.MvcApplicationPartsAssemblyInfo.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Web.Api.RazorTargetAssemblyInfo.cache" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Web.Api.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Web.Api.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Web.Api.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Web.Api.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Web.Api.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Web.Api.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Web.Api.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Web.Api.csproj.CopyComplete" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Web.Api.csproj.CoreCompileInputs.cache" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Web.Api.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Web.Api.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Web.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Web.Api.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Web.Api.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Web.Api.genruntimeconfig.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Web.Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Web.Api.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Klir.TechChallenge.Web.Api.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Klir.TechChallenge.Web.Api.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Web.Api.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Web.Api.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Web.Api.genruntimeconfig.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Debug/netcoreapp3.1/Klir.TechChallenge.Web.Api.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Debug/netcoreapp3.1/KlirTechChallenge.Web.Api.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Debug/netcoreapp3.1/KlirTechChallenge.Web.Api.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Debug/netcoreapp3.1/KlirTechChallenge.Web.Api.MvcApplicationPartsAssemblyInfo.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Debug/netcoreapp3.1/KlirTechChallenge.Web.Api.RazorTargetAssemblyInfo.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Debug/netcoreapp3.1/KlirTechChallenge.Web.Api.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Debug/netcoreapp3.1/KlirTechChallenge.Web.Api.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Debug/netcoreapp3.1/KlirTechChallenge.Web.Api.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Debug/netcoreapp3.1/KlirTechChallenge.Web.Api.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Debug/netcoreapp3.1/KlirTechChallenge.Web.Api.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Debug/netcoreapp3.1/KlirTechChallenge.Web.Api.genruntimeconfig.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Debug/netcoreapp3.1/KlirTechChallenge.Web.Api.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Debug/netcoreapp3.1/apphost.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Debug/netcoreapp3.1/project.razor.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Debug/netcoreapp3.1/staticwebassets/Klir.TechChallenge.Web.Api.StaticWebAssets.Manifest.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Debug/netcoreapp3.1/staticwebassets/Klir.TechChallenge.Web.Api.StaticWebAssets.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Debug/netcoreapp3.1/staticwebassets/KlirTechChallenge.Web.Api.StaticWebAssets.Manifest.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/Debug/netcoreapp3.1/staticwebassets/KlirTechChallenge.Web.Api.StaticWebAssets.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/aspnet-core/Klir.TechChallenge.Web.Api/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +217,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/826B234B-305D-480E-A283-3E0ACF2ABC60/131/SystemTextJsonOutputFormatter.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/84525B04-5EDB-4043-92D9-5A20A1EE4F64/C/ServiceProvider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/84525B04-5EDB-4043-92D9-5A20A1EE4F64/C/ServiceProvider.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
