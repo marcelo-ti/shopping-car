@@ -1,6 +1,12 @@
 <header>
   <nav
-    class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"
+    class="
+      navbar navbar-expand-sm navbar-toggleable-sm navbar-light
+      bg-white
+      border-bottom
+      box-shadow
+      mb-3
+    "
   >
     <div class="container">
       <a class="navbar-brand" [routerLink]="['/']">KlirTechChallenge</a>
@@ -25,17 +31,19 @@
             [routerLinkActive]="['link-active']"
             [routerLinkActiveOptions]="{ exact: true }"
           >
-            <a class="nav-link text-dark" [routerLink]="['/']">Home</a>
+            <a class="nav-link text-dark" [routerLink]="['/']">Products</a>
           </li>
-          <li class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/counter']"
-              >Counter</a
+          <li>
+            <button
+              mat-raised-button
+              color="primary"
+              type="submit"
+              routerLink="/cart-detail"
             >
-          </li>
-          <li class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/fetch-data']"
-              >Fetch data</a
-            >
+              <i class="fa fa-shopping-cart"
+                ><b> {{ (shoppingItems$ | async).length }}</b></i
+              >
+            </button>
           </li>
         </ul>
       </div>

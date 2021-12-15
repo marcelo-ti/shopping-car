@@ -1,0 +1,25 @@
+<div class="card">
+  <div class="card-header">Order Detail</div>
+  <div class="card-body">
+    <p><b>Order Date: </b>{{ order.date | date: 'medium' }}</p>
+    <table class="table table-bordered">
+      <tbody>
+        <tr *ngFor="let item of order.shoppingItem">
+          <td>{{ item.product.name }}</td>
+          <td>{{ item.quantity }}</td>
+          <td>{{ item.price | currency }}</td>
+        </tr>
+        <tr>
+          <td><b>Subtotal</b></td>
+          <td></td>
+          <td>
+            <b>{{ order.total | currency }}</b>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <button type="button" class="btn btn-primary" routerLink="/">
+      <i class="fa fa-arrow-left" aria-hidden="true"></i> Continue Shopping
+    </button>
+  </div>
+</div>

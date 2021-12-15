@@ -1,0 +1,33 @@
+<div class="card">
+  <div class="card-header">Products</div>
+  <div class="card-body">
+    <div class="card-columns">
+      <div *ngFor="let product of products">
+        <div class="card">
+          <mat-card>
+            <mat-card-header>
+              <mat-card-title>{{ product.name }}</mat-card-title>
+              <mat-card-subtitle>
+                Price: {{ product.price | currency }}
+              </mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+              <p>
+                Promotion: {{ !!product.promotion ? product.promotion : "-" }}
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button
+                mat-raised-button
+                color="primary"
+                (click)="addToCart(product)"
+              >
+                Add to Cart <i class="fa fa-shopping-cart"></i>
+              </button>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,49 @@
+<div class="card">
+  <div class="card-header">Cart</div>
+  <div class="card-body">
+    <ng-container *ngIf="(shoppingItems$ | async).length">
+      <table class="table table-sm">
+        <tbody>
+          <tr *ngFor="let item of shoppingItems$ | async">
+            <td style="border: 0">{{ item.product.name }}</td>
+            <td style="border: 0">
+              <select
+                (change)="onQuantityChange(item)"
+                [(ngModel)]="item.quantity"
+              >
+                <option [value]="quantity" *ngFor="let quantity of quantities">
+                  {{ quantity }}
+                </option>
+              </select>
+            </td>
+            <td style="border: 0">{{ item.price | currency }}</td>
+            <td style="border: 0">
+              <a
+                style="cursor: pointer"
+                (click)="removeItemFromCart(item.id)"
+                title="Remove"
+              >
+                <i
+                  class="fa fa-times"
+                  aria-hidden="true"
+                  style="color: red"
+                ></i>
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <button
+        type="button"
+        mat-raised-button
+        color="primary"
+        routerLink="/cart-detail"
+      >
+        Checkout
+      </button>
+    </ng-container>
+    <ng-container *ngIf="!(shoppingItems$ | async).length">
+      <p>Your cart is empty!</p>
+    </ng-container>
+  </div>
+</div>

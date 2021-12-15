@@ -1,0 +1,57 @@
+<div class="card">
+  <div class="card-header">Cart Summary</div>
+  <div class="card-body">
+    <div *ngIf="!isOrderCreated && !items.length">
+      <h5 style="margin-bottom: 20px">Your cart is empty!</h5>
+    </div>
+    <ng-container *ngIf="(shoppingItems$ | async).length">
+      <table class="table table-bordered">
+        <tbody>
+          <tr *ngFor="let item of shoppingItems$ | async">
+            <td>{{ item.product.name }}</td>
+            <td>
+              <input
+                type="number"
+                min="0"
+                (change)="onQuantityChange(item)"
+                [(ngModel)]="item.quantity"
+              />
+            </td>
+            <td>{{ item.price | currency }}</td>
+            <td>
+              <a
+                style="cursor: pointer"
+                (click)="removeItemFromCart(item.id)"
+                title="Remove"
+                ><i
+                  class="fa fa-times"
+                  aria-hidden="true"
+                  style="color: red"
+                ></i
+              ></a>
+            </td>
+          </tr>
+          <tr>
+            <td><b>Subtotal</b></td>
+            <td></td>
+            <td>
+              <b>{{ cartSubtotal | currency }}</b>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </ng-container>
+    <button type="button" mat-raised-button color="primary" routerLink="/">
+      <i class="fa fa-arrow-left" aria-hidden="true"></i> Continue Shopping
+    </button>
+    <button
+      type="button"
+      mat-raised-button
+      color="accent"
+      (click)="proceedToCheckout()"
+      *ngIf="(shoppingItems$ | async).length"
+    >
+      Proceed Checkout
+    </button>
+  </div>
+</div>
