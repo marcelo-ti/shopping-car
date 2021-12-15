@@ -4,7 +4,7 @@
     <p><b>Order Date: </b>{{ order.date | date: 'medium' }}</p>
     <table class="table table-bordered">
       <tbody>
-        <tr *ngFor="let item of order.shoppingItem">
+        <tr *ngFor="let item of order.shoppingItems">
           <td>{{ item.product.name }}</td>
           <td>{{ item.quantity }}</td>
           <td>{{ item.price | currency }}</td>
