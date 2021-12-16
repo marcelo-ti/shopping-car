@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "NODE_ENV=development nodemon --config .nodemon/nodemon.json",
+    "start:docker": "NODE_ENV=development nodemon --config .nodemon/nodemon-docker.json",
     "build": "ng build",
     "build:prd": "ng build --prod",
     "build:ssr": "ng run KlirTechChallenge:server:dev",
@@ -56,6 +57,7 @@
     "karma-coverage-istanbul-reporter": "~2.1.0",
     "karma-jasmine": "~2.0.1",
     "karma-jasmine-html-reporter": "^1.5.4",
+    "nodemon": "^2.0.15",
     "typescript": "3.5.3"
   },
   "optionalDependencies": {

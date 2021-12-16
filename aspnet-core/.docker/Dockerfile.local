@@ -1,0 +1,13 @@
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1-alpine AS build-env
+
+EXPOSE 5000
+
+WORKDIR /usr/src/app
+COPY . .
+
+WORKDIR /usr/src/app/Klir.TechChallenge.Web.Api
+
+RUN dotnet restore "Klir.TechChallenge.Web.Api.csproj"
+RUN dotnet build "Klir.TechChallenge.Web.Api.csproj" -c Release
+
+ENTRYPOINT [ "dotnet", "watch", "run", "--urls", "http://0.0.0.0:5000" ]

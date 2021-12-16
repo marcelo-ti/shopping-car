@@ -1,0 +1,35 @@
+version: "3.8"
+
+services:
+  backend:
+    build:
+      context: ../aspnet-core
+      dockerfile: .docker/Dockerfile.local
+    ports:
+      - "5000:5000"
+    environment:
+      - "ASPNETCORE_ENVIRONMENT=Development"
+      - "ASPNETCORE_URLS=http://+:5000"
+      - "DOTNET_USE_POLLING_FILE_WATCHER=1"
+    volumes:
+      - ../aspnet-core:/usr/src/app
+    networks:
+      - app-network
+
+  frontend:
+    depends_on:
+      - backend
+    build:
+      context: ../angular
+      dockerfile: .docker/Dockerfile.local
+    ports:
+      - "80:80"
+    command: npm run start:docker
+    volumes:
+      - ../angular/src:/usr/src/app/src
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
