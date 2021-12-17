@@ -54,12 +54,15 @@ export class CartComponentDetail implements OnInit {
 
   async onQuantityChange(shoppingItem: ShoppingItem) {
     const quantity: number = Number(shoppingItem.quantity)
-    shoppingItem.quantity = quantity
-    shoppingItem.price = await this.shoppingService.getItemPrice(
+    const priceCalculation = await this.shoppingService.getItemPrice(
       shoppingItem.product.id,
       quantity,
     )
-    
+
+    shoppingItem.quantity = quantity
+    shoppingItem.price = priceCalculation.price
+    shoppingItem.promotionApplied = priceCalculation.promotionApplied
+
     this.store.dispatch(new UpdateItemAction(shoppingItem))
     this.calculateSubtotal()
   }

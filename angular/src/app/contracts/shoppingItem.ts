@@ -5,4 +5,5 @@ export interface ShoppingItem {
   quantity: number
   price: number
   product: Product
+  promotionApplied: boolean
 }

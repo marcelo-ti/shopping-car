@@ -41,11 +41,13 @@ export class ProductComponent implements OnInit {
 
     if (isProductAlreadyAdded) {
       const quantity = productAlreadyAdded.quantity + 1
-      productAlreadyAdded.quantity = quantity
-      productAlreadyAdded.price = await this.shoppingService.getItemPrice(
+      const priceCalculation = await this.shoppingService.getItemPrice(
         selectedProduct.id,
         quantity,
       )
+      productAlreadyAdded.quantity = quantity
+      productAlreadyAdded.price = priceCalculation.price
+      productAlreadyAdded.promotionApplied = priceCalculation.promotionApplied
 
       this.store.dispatch(new UpdateItemAction(productAlreadyAdded))
     } else {

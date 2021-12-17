@@ -6,6 +6,15 @@
     </div>
     <ng-container *ngIf="(shoppingItems$ | async).length">
       <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Promotion Applied</th>
+            <th>Remove</th>
+          </tr>
+        </thead>
         <tbody>
           <tr *ngFor="let item of shoppingItems$ | async">
             <td>{{ item.product.name }}</td>
@@ -18,6 +27,7 @@
               />
             </td>
             <td>{{ item.price | currency }}</td>
+            <td>{{ !!item.promotionApplied ? item.product.promotion : "-" }}</td>
             <td>
               <a
                 style="cursor: pointer"
