@@ -4,9 +4,17 @@ namespace Klir.TechChallenge.Web.Api.Application.Domain
 {
     public class Product
     {
-        public uint Id { get; set; }
-        public string Name { get; set; }
-        public decimal Price { get; set; }
-        public Promotion? Promotion { get; set; }
+        public Product(uint id, string name, decimal price, Promotion? promotion)
+        {
+            Id = id;
+            Name = name;
+            Price = price;
+            Promotion = promotion;
+        }
+
+        public uint Id { get; }
+        public string Name { get; }
+        public decimal Price { get; }
+        public Promotion? Promotion { get; }
     }
 }

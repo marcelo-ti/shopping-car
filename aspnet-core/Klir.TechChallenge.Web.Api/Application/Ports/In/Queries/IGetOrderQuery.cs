@@ -3,9 +3,9 @@ using Klir.TechChallenge.Web.Api.Application.Domain;
 
 namespace Klir.TechChallenge.Web.Api.Application.Ports.In.Queries
 {
-    public interface IGetProductQuery
+    public interface IGetOrderQuery
     {
-        IEnumerable<Product> GetProducts();
-        Product GetById(uint productId);
+        IEnumerable<Order> GetOrder();
+        Order GetById(string id);
     }
 }

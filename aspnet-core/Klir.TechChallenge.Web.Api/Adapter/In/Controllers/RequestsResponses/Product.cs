@@ -1,6 +1,6 @@
-namespace Klir.TechChallenge.Web.Api.Application.Domain
+namespace Klir.TechChallenge.Web.Api.Adapter.In.Controllers.RequestsResponses
 {
-    public class ProductView
+    public class Product
     {
         public uint Id { get; set; }
         public string Name { get; set; }
