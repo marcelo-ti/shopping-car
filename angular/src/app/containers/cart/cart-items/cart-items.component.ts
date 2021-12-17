@@ -8,6 +8,7 @@ import {
   DeleteItemAction,
   UpdateItemAction,
 } from '../../../store/shopping.actions'
+import { ShoppingService } from 'src/app/services/shopping.service'
 
 @Component({
   selector: 'app-cart-items',
@@ -17,7 +18,10 @@ export class CartItemsComponent implements OnInit {
   shoppingItems$: Observable<ShoppingItem[]>
   quantities: any[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-  constructor(private store: Store<AppState>) {}
+  constructor(
+    private store: Store<AppState>,
+    private shoppingService: ShoppingService,
+  ) {}
 
   ngOnInit() {
     this.shoppingItems$ = this.store.select((store) => store.shopping)
@@ -27,10 +31,14 @@ export class CartItemsComponent implements OnInit {
     this.store.dispatch(new DeleteItemAction(id))
   }
 
-  onQuantityChange(shoppingItem: ShoppingItem) {
+  async onQuantityChange(shoppingItem: ShoppingItem) {
     const quantity: number = Number(shoppingItem.quantity)
     shoppingItem.quantity = quantity
-    shoppingItem.price = shoppingItem.product.price * Number(quantity)
+    shoppingItem.price = await this.shoppingService.getItemPrice(
+      shoppingItem.product.id,
+      quantity,
+    )
+
     this.store.dispatch(new UpdateItemAction(shoppingItem))
   }
 }

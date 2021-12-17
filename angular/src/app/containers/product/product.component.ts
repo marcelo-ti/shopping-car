@@ -1,12 +1,14 @@
 import { Component, OnInit } from '@angular/core'
-import { Observable } from 'rxjs'
-import { Store } from '@ngrx/store'
+import { select, Store } from '@ngrx/store'
 import { v4 as uuid } from 'uuid'
+import { take } from 'rxjs/operators'
 
 import { AppState } from '../../store/app-state'
-import { ProductService } from '../../services/product.service'
 import { ShoppingItem } from 'src/app/contracts/shoppingItem'
-import { AddItemAction } from '../../store/shopping.actions'
+import { Product } from '../../contracts/product'
+import { ProductService } from '../../services/product.service'
+import { ShoppingService } from '../../services/shopping.service'
+import { AddItemAction, UpdateItemAction } from '../../store/shopping.actions'
 
 @Component({
   selector: 'app-product',
@@ -14,28 +16,56 @@ import { AddItemAction } from '../../store/shopping.actions'
   styleUrls: ['./product.component.css'],
 })
 export class ProductComponent implements OnInit {
-  shoppingItems$: Observable<ShoppingItem[]>
   products: Product[]
-
   constructor(
     private store: Store<AppState>,
-    private productService: ProductService
+    private productService: ProductService,
+    private shoppingService: ShoppingService,
   ) {}
 
   ngOnInit() {
     this.productService
       .getAll()
-      .subscribe((result) => (this.products = result))
+      .subscribe((products) => (this.products = products))
+    this.store.select((store) => store.shopping)
   }
 
-  addToCart(selectedProduct: Product): void {
-    const newShoppingItem = {
-      id: uuid(),
-      quantity: 1,
-      price: selectedProduct.price,
-      product: selectedProduct,
-    } as ShoppingItem
+  async addToCartAsync(selectedProduct: Product): Promise<void> {
+    const shoppingItems = await this.getStateAsync(this.store)
 
-    this.store.dispatch(new AddItemAction(newShoppingItem))
+    const productAlreadyAdded = shoppingItems.filter(
+      (shoppingItem) => shoppingItem.product.id === selectedProduct.id,
+    )[0]
+
+    const isProductAlreadyAdded = productAlreadyAdded !== undefined
+
+    if (isProductAlreadyAdded) {
+      const quantity = productAlreadyAdded.quantity + 1
+      productAlreadyAdded.quantity = quantity
+      productAlreadyAdded.price = await this.shoppingService.getItemPrice(
+        selectedProduct.id,
+        quantity,
+      )
+
+      this.store.dispatch(new UpdateItemAction(productAlreadyAdded))
+    } else {
+      const newShoppingItem = {
+        id: uuid(),
+        quantity: 1,
+        price: selectedProduct.price,
+        product: selectedProduct,
+      } as ShoppingItem
+
+      this.store.dispatch(new AddItemAction(newShoppingItem))
+    }
+  }
+
+  async getStateAsync(store: Store<AppState>): Promise<ShoppingItem[]> {
+    return await store
+      .pipe(
+        select((store) => store.shopping),
+        take(1),
+      )
+      .toPromise<ShoppingItem[]>()
   }
 }

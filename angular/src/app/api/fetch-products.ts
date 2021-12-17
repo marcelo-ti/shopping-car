@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http'
 import { Observable } from 'rxjs'
 import { catchError } from 'rxjs/operators'
 import { handleError } from './handle-error'
+import { Product } from '../contracts/product'
 
 @Injectable({ providedIn: 'root' })
 export class FetchProductData {

@@ -15,7 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { AppComponent } from './app.component'
 import { NavMenuComponent } from './containers/nav-menu/nav-menu.component'
 import { HomeComponent } from './containers/home/home.component'
-import { CartComponent } from './containers/cart/cart.component'
+import { CartComponentDetail } from './containers/cart/cart-detail/cart-detail.component'
 import { CartItemsComponent } from './containers/cart/cart-items/cart-items.component'
 import { ProductComponent } from './containers/product/product.component'
 import { OrderService } from './services/order.service'
@@ -30,10 +30,9 @@ import { OrderListComponent } from './containers/order/order-list/order-list.com
     AppComponent,
     NavMenuComponent,
     HomeComponent,
-    CartComponent,
+    CartComponentDetail,
     CartItemsComponent,
     ProductComponent,
-    CartComponent,
     OrderDetailComponent,
     OrderListComponent,
   ],
@@ -44,7 +43,7 @@ import { OrderListComponent } from './containers/order/order-list/order-list.com
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'product', component: ProductComponent },
-      { path: 'cart-detail', component: CartComponent },
+      { path: 'cart-detail', component: CartComponentDetail },
       { path: 'order-detail/:id', component: OrderDetailComponent },
     ]),
     BrowserAnimationsModule,

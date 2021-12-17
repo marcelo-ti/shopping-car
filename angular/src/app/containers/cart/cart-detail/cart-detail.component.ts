@@ -4,21 +4,22 @@ import { Observable } from 'rxjs'
 import { Store } from '@ngrx/store'
 import { v4 as uuid } from 'uuid'
 
-import { ShoppingItem } from '../../contracts/shoppingItem'
-import { AppState } from '../../store/app-state'
+import { ShoppingItem } from '../../../contracts/shoppingItem'
+import { AppState } from '../../../store/app-state'
 import {
   DeleteItemAction,
   DeleteAllItemAction,
   UpdateItemAction,
-} from '../../store/shopping.actions'
-import { OrderService } from '../../services/order.service'
-import { Order } from '../../contracts/order'
+} from '../../../store/shopping.actions'
+import { OrderService } from '../../../services/order.service'
+import { ShoppingService } from 'src/app/services/shopping.service'
+import { Order } from '../../../contracts/order'
 
 @Component({
-  selector: 'app-cart',
-  templateUrl: './cart.component.html',
+  selector: 'app-cart-detail',
+  templateUrl: './cart-detail.component.html',
 })
-export class CartComponent implements OnInit {
+export class CartComponentDetail implements OnInit {
   shoppingItems$: Observable<ShoppingItem[]>
   cartSubtotal: number
   items: ShoppingItem[]
@@ -30,6 +31,7 @@ export class CartComponent implements OnInit {
     private store: Store<AppState>,
     public router: Router,
     private orderService: OrderService,
+    private shoppingService: ShoppingService,
   ) {}
 
   ngOnInit() {
@@ -50,10 +52,14 @@ export class CartComponent implements OnInit {
     )
   }
 
-  onQuantityChange(shoppingItem: ShoppingItem) {
+  async onQuantityChange(shoppingItem: ShoppingItem) {
     const quantity: number = Number(shoppingItem.quantity)
     shoppingItem.quantity = quantity
-    shoppingItem.price = shoppingItem.product.price * Number(quantity)
+    shoppingItem.price = await this.shoppingService.getItemPrice(
+      shoppingItem.product.id,
+      quantity,
+    )
+    
     this.store.dispatch(new UpdateItemAction(shoppingItem))
     this.calculateSubtotal()
   }
