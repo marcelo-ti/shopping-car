@@ -1,10 +1,13 @@
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using Klir.TechChallenge.Web.Api.Application.Domain;
+using Klir.TechChallenge.Web.Api.Application.Ports.Out;
 
 namespace Klir.TechChallenge.Web.Api.Adapter.Out.Persistence
 {
-    public class OrderRepository
+    [ExcludeFromCodeCoverage]
+    public class OrderRepository : IOrderRepository
     {
         private readonly List<Order> _orders;
 
@@ -23,7 +26,7 @@ namespace Klir.TechChallenge.Web.Api.Adapter.Out.Persistence
             return _orders.FirstOrDefault(x => x.Id == id);
         }
 
-        public void SaveOrder(Order order)
+        public void Save(Order order)
         {
             _orders.Add(order);
         }

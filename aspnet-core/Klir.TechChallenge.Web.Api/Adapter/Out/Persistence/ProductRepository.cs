@@ -1,10 +1,13 @@
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using Klir.TechChallenge.Web.Api.Application.Domain;
 using Klir.TechChallenge.Web.Api.Application.Domain.Enums;
+using Klir.TechChallenge.Web.Api.Application.Ports.Out;
 
 namespace Klir.TechChallenge.Web.Api.Adapter.Out.Persistence
 {
-    public class ProductRepository
+    [ExcludeFromCodeCoverage]
+    public class ProductRepository :  IProductRepository
     {
         public IEnumerable<Product> GetProducts()
         {

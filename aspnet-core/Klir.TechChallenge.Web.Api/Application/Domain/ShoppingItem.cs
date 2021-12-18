@@ -1,5 +1,8 @@
+using System.Diagnostics.CodeAnalysis;
+
 namespace Klir.TechChallenge.Web.Api.Application.Domain
 {
+    [ExcludeFromCodeCoverage]
     public class ShoppingItem
     {
         public ShoppingItem(string id, uint quantity, decimal price, Product product, bool promotionApplied)

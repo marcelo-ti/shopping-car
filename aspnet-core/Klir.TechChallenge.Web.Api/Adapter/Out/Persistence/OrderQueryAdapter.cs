@@ -6,14 +6,14 @@ namespace Klir.TechChallenge.Web.Api.Adapter.Out.Persistence
 {
     public class OrderQueryAdapter : ILoadOrder
     {
-        private readonly OrderRepository _orderRepository;
+        private readonly IOrderRepository _orderRepository;
 
-        public OrderQueryAdapter(OrderRepository orderRepository)
+        public OrderQueryAdapter(IOrderRepository orderRepository)
         {
             _orderRepository = orderRepository;
         }
 
-        public IEnumerable<Order> LoadOrder()
+        public IEnumerable<Order> LoadOrders()
         {
             return _orderRepository.GetOrders();
         }

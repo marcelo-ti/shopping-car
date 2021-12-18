@@ -11,15 +11,19 @@ namespace Klir.TechChallenge.Web.Api.Adapter.In.Calculators
             if (quantity < Multiple)
                 return (price * quantity, false);
 
-            uint totalProductsForFree;
-            if (quantity % 3 == Multiple)
+            uint totalOf3For1;
+            if (quantity % Multiple == 0)
             {
-                totalProductsForFree = quantity / Multiple;
-                return (price * (quantity - totalProductsForFree), true);
+                totalOf3For1 = quantity / Multiple;
+                return (10 * totalOf3For1, true);
             }
 
-            totalProductsForFree = quantity / Multiple;
-            return (price * (quantity - totalProductsForFree), true);
+            totalOf3For1 = quantity / Multiple;
+            var priceWithPromotionApplied = totalOf3For1 * 10;
+            var quantityWithoutPromotion = quantity - (totalOf3For1 * Multiple);
+            var difference = quantityWithoutPromotion * price;
+
+            return (priceWithPromotionApplied + difference, true);
         }
     }
 }

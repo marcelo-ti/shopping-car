@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using Klir.TechChallenge.Web.Api.Adapter.In.Calculators;
 using Klir.TechChallenge.Web.Api.Adapter.Out.Persistence;
 using Klir.TechChallenge.Web.Api.Application.Ports.In.Calculators;
@@ -16,6 +17,7 @@ using Microsoft.OpenApi.Models;
 
 namespace Klir.TechChallenge.Web.Api
 {
+    [ExcludeFromCodeCoverage]
     public class Startup
     {
         readonly string AllowSpecificOrigins = "_allowSpecificOrigins";
@@ -30,8 +32,8 @@ namespace Klir.TechChallenge.Web.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddSingleton<ProductRepository>();
-            services.AddSingleton<OrderRepository>();
+            services.AddSingleton<IProductRepository, ProductRepository>();
+            services.AddSingleton<IOrderRepository, OrderRepository>();
             services.AddScoped<IGetProductQuery, GetProductService>();
             services.AddScoped<IGetOrderQuery, GetOrderService>();
             services.AddScoped<ILoadProduct, ProductQueryAdapter>();

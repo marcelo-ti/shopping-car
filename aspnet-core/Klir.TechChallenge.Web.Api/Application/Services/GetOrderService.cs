@@ -14,9 +14,9 @@ namespace Klir.TechChallenge.Web.Api.Application.Services
             _loadOrder = loadOrder;
         }
 
-        public IEnumerable<Order> GetOrder()
+        public IEnumerable<Order> GetOrders()
         {
-            return _loadOrder.LoadOrder();
+            return _loadOrder.LoadOrders();
         }
 
         public Order GetById(string id)

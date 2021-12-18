@@ -38,7 +38,7 @@ namespace Klir.TechChallenge.Web.Api.Adapter.In.Controllers.V1
         public IEnumerable<Order> Get()
         {
             return _getOrderQuery
-                .GetOrder()
+                .GetOrders()
                 .Select(MapOrder);
         }
 
@@ -51,31 +51,32 @@ namespace Klir.TechChallenge.Web.Api.Adapter.In.Controllers.V1
         [HttpPost]
         public IActionResult Add([Required] Order order)
         {
-            _saveNewOrderPort.Save(
-                new Application.Domain.Order(order.Id, order.Date, order.Total,
-                    order.ShoppingItems.Select(
-                        shoppingItem =>
-                        {
-                            var product = _getProductQuery.GetById(shoppingItem.Product.Id);
+            var shoppingItems = order.ShoppingItems.Select(
+                shoppingItem =>
+                {
+                    var product = _getProductQuery.GetById(shoppingItem.Product.Id);
 
-                            var promotion =
-                                EnumExtensions.GetValueFromDescription<Promotion>(shoppingItem.Product.Promotion);
+                    var promotion =
+                        EnumExtensions.GetValueFromDescription<Promotion>(shoppingItem.Product.Promotion);
 
-                            var (price, promotionApplied) = _engineCalculator.GetCalculator(promotion)
-                                .Calculate(shoppingItem.Quantity, product.Price);
+                    var (price, promotionApplied) = _engineCalculator.GetCalculator(promotion)
+                        .Calculate(shoppingItem.Quantity, product.Price);
 
-                            return new Application.Domain.ShoppingItem(shoppingItem.Id,
-                                shoppingItem.Quantity, price,
-                                new Application.Domain.Product
-                                (
-                                    shoppingItem.Product.Id,
-                                    shoppingItem.Product.Name,
-                                    shoppingItem.Product.Price,
-                                    promotion
-                                ),
-                                promotionApplied);
-                        }
-                    )));
+                    return new Application.Domain.ShoppingItem(shoppingItem.Id,
+                        shoppingItem.Quantity, price,
+                        new Application.Domain.Product
+                        (
+                            shoppingItem.Product.Id,
+                            shoppingItem.Product.Name,
+                            shoppingItem.Product.Price,
+                            promotion
+                        ),
+                        promotionApplied);
+                }
+            ).ToList();
+
+            _saveNewOrderPort.Save(new Application.Domain.Order(order.Id, order.Date, shoppingItems.Sum(x => x.Price),
+                shoppingItems));
             return Ok(order);
         }
 

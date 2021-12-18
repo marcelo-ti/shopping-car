@@ -35,7 +35,7 @@ namespace Klir.TechChallenge.Web.Api.Extensions
                 }
             }
 
-            return default(T);
+            return default;
         }
     }
 }

@@ -5,16 +5,16 @@ namespace Klir.TechChallenge.Web.Api.Adapter.Out.Persistence
 {
     public class OrderPersistenceAdapter : ISaveNewOrderPort
     {
-        private readonly OrderRepository _orderRepository;
+        private readonly IOrderRepository _orderRepository;
 
-        public OrderPersistenceAdapter(OrderRepository orderRepository)
+        public OrderPersistenceAdapter(IOrderRepository orderRepository)
         {
             _orderRepository = orderRepository;
         }
 
         public void Save(Order order)
         {
-            _orderRepository.SaveOrder(order);
+            _orderRepository.Save(order);
         }
     }
 }

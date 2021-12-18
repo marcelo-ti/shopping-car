@@ -6,9 +6,9 @@ namespace Klir.TechChallenge.Web.Api.Adapter.Out.Persistence
 {
     public class ProductQueryAdapter : ILoadProduct
     {
-        private readonly ProductRepository _productRepository;
+        private readonly IProductRepository _productRepository;
 
-        public ProductQueryAdapter(ProductRepository productRepository)
+        public ProductQueryAdapter(IProductRepository productRepository)
         {
             _productRepository = productRepository;
         }

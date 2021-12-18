@@ -1,8 +1,10 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Klir.TechChallenge.Web.Api.Application.Domain
 {
+    [ExcludeFromCodeCoverage]
     public class Order
     {
         public Order(string id, DateTime date, decimal total, IEnumerable<ShoppingItem> shoppingItems)
