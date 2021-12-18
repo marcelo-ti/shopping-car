@@ -1,7 +1,7 @@
 using Klir.TechChallenge.Web.Api.Adapter.In.Calculators;
 using Xunit;
 
-namespace Klir.TechChallenge.Tests.Adapter.In.Controllers.Calculators
+namespace Klir.TechChallenge.Tests.Adapter.In.Calculators
 {
     public class Buy1Get1FreeCalculatorTests
     {

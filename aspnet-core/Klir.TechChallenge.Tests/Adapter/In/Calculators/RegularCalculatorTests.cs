@@ -1,8 +1,7 @@
 using Klir.TechChallenge.Web.Api.Adapter.In.Calculators;
-using Klir.TechChallenge.Web.Api.Application.Domain.Enums;
 using Xunit;
 
-namespace Klir.TechChallenge.Tests.Adapter.In.Controllers.Calculators
+namespace Klir.TechChallenge.Tests.Adapter.In.Calculators
 {
     public class RegularCalculatorTests
     {

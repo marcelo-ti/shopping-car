@@ -18,10 +18,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Adapter\In\Controllers\V1" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Klir.TechChallenge.Web.Api\Klir.TechChallenge.Web.Api.csproj" />
   </ItemGroup>
 
